@@ -31,7 +31,8 @@ QuickTerms is a simple React Native dictionary application built using Expo. It 
 Ensure the following tools are installed on your system:
 
 - Node.js  
-- Expo CLI  
+- Expo CLI
+  Run expo commands using: npx expo 
 - Expo Go (on a physical device)  
 - Optional: Android Studio or Xcode for emulator support  
 
@@ -44,13 +45,37 @@ cd QuickTermsExpo
 
 ### Install Dependancies
 
+To ensure the correct versions of React Native + Expo Modules are installed, follow this order:
+
+#### 1.Remove any cached modules (Optional but recommended)
+
+```bash
+rm -rf node_modules package-lock.json .expo .expo-shared
+```
+
+#### 2. Install dependancies
+
 ```bash
 npm install
+```
+
+#### 3. Validate and auto-fix Expo dependancy versions
+
+```bash
+npx expo install --fix
 ```
 
 ### Running app
 ```bash
 npx expo start
+```
+
+### IF app fails to load
+
+Run Expo with cache clearing:
+
+```bash
+npx expo start -c
 ```
 
 Scan the generated QR code using the Expo Go app to launch the project on a mobile device.
