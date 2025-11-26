@@ -84,7 +84,7 @@ export default function StatisticsScreen() {
 
 const styles = StyleSheet.create({
   container: { padding: 16 },
-  header: { fontSize: 28, fontWeight: 'bold', marginBottom: 20 },
+  header: { fontSize: 28, fontWeight: 'bold', marginBottom: 20, fontFamily:'Georgia', color: '#333' },
   card: {
     backgroundColor: '#fff',
     padding: 16,
