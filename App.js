@@ -41,7 +41,7 @@ export default function App() {
           {/* nav without headers as using custom one */}
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             
-            {/* has homescreen and settings */}
+            {/* has homescreen settings, categories and statistics */}
             <Stack.Screen name="Main" component={BottomTabs}/> 
 
             <Stack.Screen name="AddTerm" component={AddTermScreen} />

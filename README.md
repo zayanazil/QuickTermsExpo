@@ -15,6 +15,9 @@ QuickTerms is a simple React Native dictionary application built using Expo. It 
 - **Search System**  
   A real-time search bar allows fast filtering of terms.
 
+- **Statistics**  
+  A separate Statistics tab provides insights such as total terms, categories, most and least used, etc.
+
 - **Persistent Storage**  
   Terms and categories are stored locally on the device using AsyncStorage so data is retained between sessions.
 
@@ -93,6 +96,14 @@ Scan the generated QR code using the Expo Go app to launch the project on a mobi
 - Persistent category storage via AsyncStorage.
 - Category selection using a dedicated modal component.
 
+### Statistics Tab
+- Total number of terms.
+- Total categories.
+- Terms per category.
+- Most & least used categories.
+- Average definition length.
+- Most recently added item.
+
 ### Search Functionality
 - Real-time data filtering of terms using the search bar.
 
@@ -104,7 +115,7 @@ Data persists past the app being closed and reopened.
 
 ### Navigation
 - Stack Navigator for all screens.
-- Bottom Tab Navigator for Home, Settings and Categories.
+- Bottom Tab Navigator for Home, Settings, Statistics and Categories.
 - Custom global header component.
 
 ## 4. Screenshots
@@ -164,6 +175,7 @@ QuickTermsExpo/
     │   ├── EditTermScreen.js
     │   ├── HomeScreen.js
     │   ├── SettingsScreen.js
+    │   ├── StatisticsScreen.js
     │   └── TermDetailScreen.js
     │
     ├── storage/

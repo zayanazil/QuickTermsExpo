@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import CategoriesScreen from '../screens/CategoriesScreen';
+import StatisticsScreen from '../screens/StatisticsScreen';
 
 //bottom tab navigator for home, categories, and settings
 const Tab = createBottomTabNavigator();
@@ -30,6 +31,8 @@ export default function BottomTabs() {
             iconName = 'settings';
           } else if (route.name === 'CategoriesTab') {
             iconName = 'list';
+          } else if (route.name === 'StatisticsTab') {
+            iconName = 'stats-chart';
           }
 
           return <Ionicons name={iconName} size={22} color={color} />;
@@ -49,6 +52,12 @@ export default function BottomTabs() {
       />
 
       <Tab.Screen 
+        name="StatisticsTab" 
+        component={StatisticsScreen} 
+        options={{ title: 'Statistics' }} 
+      />
+
+            <Tab.Screen 
         name="SettingsTab" 
         component={SettingsScreen} 
         options={{ title: 'Settings' }} 
