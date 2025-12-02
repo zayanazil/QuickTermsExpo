@@ -42,7 +42,7 @@ Ensure the following tools are installed on your system:
 ### Cloning the Project
 
 ```bash
-git clone https://github.com/yourname/QuickTermsExpo
+git clone https://github.com/zayanazil/QuickTermsExpo
 cd QuickTermsExpo
 ```
 
